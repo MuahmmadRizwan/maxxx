@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maximize Insights</title>
+  <!-- BOOTSTRAP CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- BOOTSTRAP CDN -->
+  <!-- css link -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media_queries.css">
+  <!-- css link -->
+  <!-- Icons Link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Icons Link-->
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;600;700&family=Poppins:wght@100;200;300;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Fonts -->
+
+</head>
+
+<body>
+  <!-- Nav bar -->
+  <img src="./assets/WhatsApp Image 2023-12-27 at 10.42.27 AM.jpeg" class="back" alt="">
+  <nav class="navbar navbar-expand-lg p-0 fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./assets/logo-removebg-preview (1).png" class="logo" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" style="color: #FF9600;" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="hoverableDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Industries
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="hoverableDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Resources
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="hoverableDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <a href="" class="con me-2">+92323456789</a>
+        <div class="btn-conteiner me-2">
+          <a class="btn-content" href="#">
+            <span class="btn-title">Estimated Project</span>
+            <span class="icon-arrow">
+              <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <path id="arrow-icon-one"
+                    d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+                    fill="#FFFFFF"></path>
+                  <path id="arrow-icon-two"
+                    d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+                    fill="#FFFFFF"></path>
+                  <path id="arrow-icon-three"
+                    d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+                    fill="#FFFFFF"></path>
+                </g>
+              </svg>
+            </span>
+          </a>
+        </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Nav bar -->
+  <!-- icons -->
+  <div class="fixed-icons">
+    <a href="#" title="Chat"><i class="fa fa-comments"></i></a>
+    <a href="#" title="Call"><i class="fa fa-phone"></i></a>
+  </div>
+  <!-- icons -->
+
+  <!-- HOME -->
+  <div class="main">
+    <div class="container">
+      <div class="row">
+        <div style="margin-left: 8%;" class="col-lg-6 col-md-6 col-sm-12 mt-5 px-5">
+          <h1 class="main_h py-5" style="margin-top: 20%; font-size: 40px;">Optimize,Deliver Excel</h1>
+          <p class="main_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolor culpa
+            ipsum. A facere culpa minus praesentium sit beatae labore mollitia consectetur, omnis debitis
+            dicta, numquam harum, dolores placeat tempore!</p>
+          <button class="Learn_more le_m"> Learn more!</button>
+          <br><br>
+          <div class="frame">
+            <div class="spinner1">
+            </div>
+            <h3>99.99%</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.!</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <!-- <img class="main_img" src="./assets/Development.gif" alt=""> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- HOME -->
+  <br>
+  <!-- main2 -->
+  <div class="container box" data-aos="fade-right" data-aos-delay="100">
+    <div class="row mx-auto"> <!-- Added mx-auto class for centering -->
+      <div class="col-lg-3 col-md-5 mb-4 num1 mx-2"> <!-- Added mb-4 class for bottom margin -->
+        <div id="number-container-1">
+          <h1 class="numbers" id="number-1"></h1>
+        </div>
+        <p>Marketing Collateral</p>
+      </div>
+
+      <div class="col-lg-2 col-md-5 mb-4 num1 mx-2"> <!-- Added mb-4 class for bottom margin -->
+        <div id="number-container-2">
+          <h1 class="numbers" id="number-2"></h1>
+        </div>
+        <p>Logos & Identity</p>
+      </div>
+
+      <div class="col-lg-3 col-md-5 mb-4 num1 mx-2"> <!-- Added mb-4 class for bottom margin -->
+        <div id="number-container-3">
+          <h1 class="numbers-3" id="number-3"></h1>
+        </div>
+        <p>Website Developed</p>
+      </div>
+
+      <div class="col-lg-3 col-md-5 mb-4 num1 mx-2"> <!-- Added mb-4 class for bottom margin -->
+        <div id="number-container-4">
+          <h1 class="numbers-4" id="number-4"></h1>
+        </div>
+        <p>Years of Experience</p>
+      </div>
+    </div>
+  </div>
+  <!-- main2 -->
+  <!-- Services -->
+  <section>
+    <div class="container ser">
+      <div class="head" data-aos="fade-up" data-aos-delay="50">
+        <br>
+        <h2 style="font-weight: bold;color:  #002966">OUR Services</h2>
+        <h3>Create Awesome Service With Our Tools</h3>
+        <p>Our strategy includes consistently evolving, to ensure we’re producing <br>
+          exceptional SEO for business.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="tab-container">
+        <div class="tab-filter-container">
+       
+          <li class="filter-btn active" data-tab="web-development">
+            <ion-icon name="logo-nodejs"></ion-icon>
+            Web Development
+          </li>
+          <li class="filter-btn " data-tab="web-design">
+            <ion-icon name="desktop-outline"></ion-icon>
+            Web Design
+          </li>
+          <li class="filter-btn" data-tab="ux-design">
+            <ion-icon name="diamond-outline"></ion-icon>
+            UI UX Design
+          </li>
+          <li class="filter-btn" data-tab="app-development">
+            <ion-icon name="logo-google-playstore"></ion-icon>
+            App Development
+          </li>
+        </div>
+        <div class="tab-filter-item-container">
+     
+          <div class="row tab-item web-design select_tab">
+            <div class="col-md-5 tab-content-left">
+              <img height="" width="50px"
+                src="images/web design.jpg"
+                alt="web design"
+                class="tab-img"
+              />
+            </div>
+            <div class="col-md-7 tab-content-right">
+              <h1 class="tab-heading">Responsive Web Design</h1>
+              <p class="paragraph">
+                Web design means creating websites with user-friendly structure
+                and with aesthetic approach. A web designer always thinks about
+                the layout, color scheme and unique design of a website
+              </p>
+              <button class="Learn_more le_m"> Learn more!</button>
+            </div>
+          </div>
+              
+          <div class="row tab-item web-development">
+           
+            <div class="col-md-5  tab-content-right">
+              <img
+                src="images/web-development.jpg"
+                alt="web development"
+                class="tab-img"
+              />
+            </div>
+            <div class="col-md-7  tab-content-left">
+              <h1 class="tab-heading">Web Development</h1>
+              <p class="paragraph">
+                Web Development consists of two segments front end development
+                and backend development. Front-end Developers work with visual
+                designs of a website and build the sites with using of code
+              </p>
+              <button class="Learn_more le_m"> Learn more!</button>
+            </div>
+          </div>
+          <div class="row tab-item ux-design">
+            <div class="col-md-5 tab-content-left">
+              <img src="images/ux-ui.jpg" alt="UI/UX Design" class="tab-img" />
+            </div>
+            <div class="col-md-7 tab-content-right">
+              <h1 class="tab-heading">UI UX Design</h1>
+              <p class="paragraph">
+                This course UX & UI Design is designed for those people, who
+                wants to design anything to keep users on first priority and
+                working on to make them happy.
+              </p>
+              <button class="Learn_more le_m"> Learn more!</button>
+            </div>
+          </div>
+          <div class="container tab-item app-development">
+            <div class="row tab-content-left">
+              <div class="col-md-5 tab-content-right">
+                <img
+                  src="images/app development.png"
+                  alt="UI/UX Design"
+                  class="tab-img"
+                />
+              </div>
+              <div class="col-md-7">
+              <h1 class="tab-heading">App <br> Development</h1>
+              <p class="paragraph ">
+                With the world going mobile, the importance of apps is
+                increasing by the day. App development hence refers to the
+                creation of applications to be used on mobile devices.
+              </p>
+              <button class="Learn_more le_m"> Learn more!</button>
+              <br>
+            </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- our clients -->
+  <div class="head" data-aos="fade-up" data-aos-delay="50">
+    <br>
+    <h4 style="font-weight: bold;">OUR Clients</h4>
+    <h3>Create Awesome Service With Our Tools</h3>
+    <p>Our strategy includes consistently evolving, to ensure we’re producing <br>
+      exceptional SEO for business.</p>
+  </div>
+  <div class="clients_img">
+    <img class="clients" src="./assets/companies2-removebg-preview (1).png" alt="">
+  </div>
+  <br><br>
+  <!-- TECH STACK -->
+  <section class="tech-stack">
+    <div class="container text-center tech-h1 ">
+      <h1>Tech Stack</h1>
+      <p>Our Strategy includes consienty evolving, to ensure we're producing</p>
+    </div>
+    <div class="container-fluid pt-1">
+      <div class="card shadow mb-5">
+    <h2 class="text-h2">Technologies We Use</h2>
+     <section class="tech-logos slider pb-2">
+        <div class="slide"><img src="assets/html-logo.png"></div>
+        <div class="slide"><img src="assets/js-logo.png"></div>
+        <div class="slide"><img src="assets/html-logo.png"></div>
+        <div class="slide"><img src="assets/js-logo.png"></div>
+        <div class="slide"><img src="assets/html-logo.png"></div>
+        <div class="slide"><img src="assets/js-logo.png"></div>
+        <div class="slide"><img src="assets/html-logo.png"></div>
+       
+     </section>
+    </div>
+  </div>
+  </section>
+  <br>
+  <!-- Industries -->
+  <div class="content">
+    <div class="main-container">
+      <div class="tabel-title">
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet,</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia pariatur dolore, voluptates in rerum incidunt
+          alias quam saepe eligendi deserunt..</p>
+      </div>
+
+      <div class="connnnnnnn">
+        <ul class="tabel-menu">
+          <li class="btn-txt tab-btn active" onclick="openTab('firt')" id="firt-btn">
+            <div>Lorem sit amet.</div>
+          </li>
+
+          <li class="btn-txt tab-btn" onclick="openTab('second')" id="second-btn">
+            <div>Lorem ipsum dolor sit amet sit amet.</div>
+          </li>
+
+          <li class="btn-txt tab-btn" onclick="openTab('third')" id="third-btn">
+            <div>Lorem ipsum dolor amet.</div>
+          </li>
+
+          <li class="btn-txt tab-btn" onclick="openTab('forth')" id="forth-btn">
+            <div>Lorem ipsum dolor sit amet.</div>
+          </li>
+
+          <li class="btn-txt tab-btn" onclick="openTab('fifth')" id="fifth-btn">
+            <div>dolor sit amet.</div>
+          </li>
+
+        </ul>
+
+
+        <div class="txt-content " id="firt">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic perspiciatis cum ratione dolorem nemo velit
+            libero molestias, enim unde ut incidunt repudiandae nulla. Sed labore exercitationem quas asperiores totam!
+            Deleniti!</p>
+        </div>
+
+        <div class="txt-content" id="second">
+          <p>Lorem consectetur adipisicing elit. Hic perspiciatis cum ratione dolorem nemo velit libero molestias, enim
+            unde ut incidunt repudiandae nulla. Sed labore exercitationem quas asperiores totam! Deleniti!</p>
+        </div>
+
+        <div class="txt-content fadeZoomIn" id="third">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic perspiciatis cum ratione dolorem nemo velit
+            libero molestias, entationem quas asperiores totam! Deleniti!</p>
+        </div>
+
+        <div class="txt-content fadeZoomIn" id="forth">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic perspiciatis cum ratione dolorem nemo venim
+            unde ut incidunt repudiandae nulla. Sed labore exercitationem quas asperiores totam! Deleniti!</p>
+        </div>
+
+        <div class="txt-content fadeZoomIn" id="fifth">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. ratione dolorem nemo velit libero molestias, enim
+            unde ut incidunt repudiandae nulla. Sed labore exercitationem quas asperiores totam! Deleniti!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- Resources -->
+  <div class="head" data-aos="fade-up" data-aos-delay="50">
+    <br>
+    <h4 style="font-weight: bold;">Resources</h4>
+    <h3>Create Awesome Service With Our Tools</h3>
+    <p>Our strategy includes consistently evolving, to ensure we’re producing <br>
+      exceptional SEO for business.</p>
+  </div>
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="blogs">
+          <div class="b-con">
+            <h2>Blogs</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, fuga. Dicta, velit. ?</p>
+            <button class="Learn_more1 le_m"><a href="" class="l-m">Learn more!</a></button>
+          </div>
+          <img src="./assets/Open source.gif" alt="">
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="news">
+          <div class="n-con">
+            <h2>News</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, fuga. Dicta, velit. ?</p>
+            <button class="Learn_more1 le_m"><a href="" class="l-m">Learn more!</a></button>
+          </div>
+          <img src="./assets/UI-UX team.gif" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <!-- About -->
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- BOOTSTRAP CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- BOOTSTRAP CDN -->
+  <!--  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!--  -->
+  	
+  <script>
+     $(document).ready(function(){
+    $('.tech-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+
+  </script>
+  <script src="index.js"></script>
+</body>
+
+</html>

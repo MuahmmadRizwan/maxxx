@@ -1,0 +1,409 @@
+* {
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'poppins', sans-serif;
+    background-color: azure;
+  }
+  
+  .background {
+    background-image: url(../assets/WhatsApp\ Image\ 2023-12-27\ at\ 10.42.27\ AM.jpeg);
+    height: auto;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  
+  .logo {
+    width: 200px;
+    height: 80px;
+  }
+  
+  nav {
+    backdrop-filter: blur(10px);
+    /* border-radius: px; */
+    background: linear-gradient(145deg, #f0f0f0, #f0f0f04a);
+    box-shadow: 2px 5px 10px rgba(128, 128, 128, 0.527);
+  }
+  
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .nav-item {
+    padding-right: 10px;
+  }
+  
+  .nav-link {
+    color: #002966;
+  }
+  
+  /* button */
+  .btn-conteiner {
+    display: flex;
+    justify-content: center;
+    --color-text: #ffffff;
+    --color-background: #FF9600;
+    --color-outline: #FF9600;
+    --color-shadow: #00000080;
+  }
+  
+  .btn-content {
+    display: flex;
+    align-items: center;
+    padding: 0px 8px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 13px;
+    color: var(--color-text);
+    background: var(--color-background);
+    transition: 1s;
+    border-radius: 100px;
+    box-shadow: 0 0 0.2em 0 var(--color-background);
+  }
+  
+  .btn-content:hover,
+  .btn-content:focus {
+    transition: 0.5s;
+    -webkit-animation: btn-content 1s;
+    animation: btn-content 1s;
+    outline: 0.1em solid transparent;
+    outline-offset: 0.2em;
+    box-shadow: 0 0 0.4em 0 var(--color-background);
+  }
+  
+  .btn-content .icon-arrow {
+    transition: 0.5s;
+    margin-right: 0px;
+    transform: scale(0.6);
+  }
+  
+  .btn-content:hover .icon-arrow {
+    transition: 0.5s;
+    margin-right: 25px;
+  }
+  
+  .icon-arrow {
+    width: 20px;
+    margin-left: 15px;
+    position: relative;
+    top: 6%;
+  }
+  
+  /* SVG */
+  #arrow-icon-one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+  }
+  
+  #arrow-icon-two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+  }
+  
+  .btn-content:hover #arrow-icon-three {
+    animation: color_anim 1s infinite 0.2s;
+  }
+  
+  .btn-content:hover #arrow-icon-one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+  }
+  
+  .btn-content:hover #arrow-icon-two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+  }
+  .con {
+    text-decoration: none;
+    color: #002966;
+  
+  }
+  /* SVG animations */
+  @keyframes color_anim {
+    0% {
+      fill: white;
+    }
+  
+    50% {
+      fill: var(--color-background);
+    }
+  
+    100% {
+      fill: white;
+    }
+  }
+  
+  /* Button animations */
+  @-webkit-keyframes btn-content {
+    0% {
+      outline: 0.2em solid var(--color-background);
+      outline-offset: 0;
+    }
+  }
+  
+  @keyframes btn-content {
+    0% {
+      outline: 0.2em solid var(--color-background);
+      outline-offset: 0;
+    }
+  }
+  /* Navbar */
+  .section {
+    width: 100%;
+    height: auto;
+  }
+  
+  .sec_company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+  }
+  
+  .sec_headin {
+    text-align: center;
+  }
+  
+  .sec_headin h2 {
+    font-size: 3rem;
+    color: #002966;
+  
+  }
+  
+  .sec_headin p {
+    color: #2bbcef;
+    font-size: 22px;
+    margin-top: -10px;
+    letter-spacing: 1px;
+  }
+  
+  .mission_sec {
+    width: 60%;
+    border: 1px solid rgba(128, 128, 128, 0.383);
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: 5px 10px 5px rgba(128, 128, 128, 0.175);
+    display: flex;
+    gap: 150px;
+    margin-top: 15px;
+  }
+  
+  .mission_sec p {
+    font-size: 15px;
+  }
+  
+  .fr-img img {
+    width: 200px;
+  }
+  
+  .mission_sec h3 {
+    color: #fca62d;
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  
+  }
+  
+  /* core team */
+  
+  .team_sec {
+    width: 60%;
+    border: 1px solid rgba(128, 128, 128, 0.383);
+    background-color: rgba(255, 255, 255, 0.196);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: 5px 10px 5px rgba(128, 128, 128, 0.175);
+    text-align: center;
+    gap: 150px;
+    margin-top: 15px;
+  }
+  
+  .team_hagin h3 {
+    color: #fca62d;
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  
+  .boxes {
+    display: flex;
+    text-align: start;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .box_row {
+    display: flex;
+    margin-bottom: 50px;
+    gap: 40px;
+  }
+  
+  .box_row_end {
+    margin-bottom: 0;
+  }
+  
+  .boxin-img img {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+  }
+  
+  .box {
+    display: flex;
+    width: 100%;
+  }
+  
+  .box-headin {
+    margin-left: 10px;
+  }
+  
+  .boxin-mem h4 {
+    font-size: 14px;
+    font-weight: 800;
+    margin-top: -6px;
+  }
+  
+  .boxin-mem p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .boxin-des p {
+    font-size: 13px;
+  }
+  
+  .sec-left {
+    text-align: end;
+    margin-right: 10px;
+    margin-left: 0;
+  }
+  
+  
+  
+  @media (max-width: 900px) {
+    .mission_sec {
+        gap: 100px;
+    }
+  
+    .mission_sec {
+        gap: 70px;
+    }
+  
+  }
+  
+  @media (max-width: 900px) {
+    .mission_sec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        transition: ease 0.5s all;
+    }
+  
+    .box {
+        display: flex;
+  
+    }
+  
+    .box-sec-tow {
+        flex-direction: row-reverse;
+        text-align: end;
+    }
+  
+    .box-sec-three {
+        flex-direction: row-reverse;
+  
+    }
+  
+    .box-sec-three .box-headin {
+        text-align: start;
+        margin-left: 10px;
+    }
+  
+    .boxin-mem h4 {
+  
+        margin-top: -3px;
+    }
+  
+    .box-sec-tow .box-headin {
+        margin-right: 10px;
+    }
+  
+    .sec_headin h2 {
+        font-size: 2.5rem;
+    }
+  
+    .sec_headin p {
+  
+        font-size: 17px;
+        transition: ease 0.5s all;
+    }
+  
+    .mission_vission {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0;
+        transition: ease 0.5s all;
+    }
+  
+    .box_row {
+        display: flex;
+        flex-direction: column;
+    }
+  
+  
+  }
+  
+  @media (max-width: 600px) {
+    .sec_headin h2 {
+        font-size: 2.2rem;
+    }
+  
+    .team_sec {
+        width: 90%;
+        transition: ease 0.3s all;
+    }
+  
+    .mission_sec {
+        width: 90%;
+    }
+  
+    .boxin-img img {
+        height: 70px;
+        width: 70px;
+        border-radius: 10px;
+    }
+  
+    .boxin-mem h4 {
+        font-size: 13px;
+        font-weight: 800;
+        margin-top: -6px;
+    }
+  
+    .boxin-mem p {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+  
+    .boxin-des p {
+        font-size: 12px;
+    }
+  
+    .sec-left {
+        text-align: end;
+        margin-right: 10px;
+        margin-left: 0;
+    }
+  }
+  
+  
